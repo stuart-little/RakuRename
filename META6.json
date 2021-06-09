@@ -1,0 +1,15 @@
+{
+	"name" : "RakuRename",
+	"license" : "Artistic-2.0",
+	"version" : "0.1",
+	"tags" : [ "filesystem", "utils" ],
+	"description" : "rename files based on regular expressions",
+	"provides" : {		
+		"rrnm" : "bin/rrnm"
+	},
+	"authors" : ["stuart-little"],
+	"perl" : "6.d",
+	"depends" : [ ],
+	"source-type" : "",
+	"source-url" : ""
+}

@@ -1,0 +1,27 @@
+#!/usr/bin/env perl6
+use v6;
+use MONKEY-SEE-NO-EVAL;
+
+my %*SUB-MAIN-OPTS=:named-anywhere,;
+sub MAIN(
+    Str $rgx?;
+    Bool :h(:$help),
+    Bool :n(:dry(:$dry-run)),
+    Str :c(:cmd(:$command)) = "mv",
+    *@args;
+    ) {
+
+    ($help) && do {
+	my $cmd=qq{less $*PROGRAM-NAME};
+	shell($cmd);
+	exit;
+    };
+
+    my &rnm = EVAL q{ sub (Str $x) { return \qq[{S/^(\w+)/{$0.uc}/ with $rgx}] with $x }  };
+    
+    for @args -> $file {
+	my $newfile = ($file.IO.dirname,$file.IO.basename.&rnm).join('/');
+	my $to-run=qq{$command $file $newfile};
+	($dry-run) ?? (say $to-run) !! shell($to-run)
+    }    
+}
