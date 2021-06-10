@@ -6,7 +6,7 @@ my %*SUB-MAIN-OPTS=:named-anywhere,;
 sub MAIN(
     Str $rgx?, #= a singly-quoted substitution / transliteration operator, of the form s/old/new/ or tr/old/new/
     Bool :n(:dry(:$dry-run)), #= do not actually run the command, just show what you'd do
-    Str :c(:cmd(:$command)) = "mv", #= command to run; defaults to 'mv', but could be 'cp' to copy, 'cp -r' to copy a directory recursively, 'git mv' to do a git file-rename, etc
+    Str :c(:cmd(:$command)) = "mv", #= command to run; defaults to 'mv', but could be 'cp' to copy, 'cp -r' to copy a directory recursively, 'git mv' to do a git file-rename, etc.
     *@args, #= the files you want to operate the regex substitution on
     ) {
 
