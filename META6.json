@@ -10,6 +10,6 @@
 	"authors" : ["stuart-little"],
 	"perl" : "6.d",
 	"depends" : [ ],
-	"source-type" : "",
-	"source-url" : ""
+	"source-type" : "git",
+	"source-url" : "https://github.com/stuart-little/RakuRename"
 }
