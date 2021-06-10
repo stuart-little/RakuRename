@@ -47,7 +47,7 @@ or equivalently, using [lookahead assertions](https://docs.raku.org/language/reg
 ```
 rrnm -c='git mv' 's/^<?before \d>/0/' [0-9]*
 ```
-That will perform a `git mv` on every file whose name starts with a digit, appending a `0` (if you wanted to do this for some reason).
+That will perform a `git mv` on every file whose name starts with a digit, prepending a `0` (if you wanted to do this for some reason).
 
 The `--dry` option just *shows* you the command that would be run. So in a git repo that contains files `1.txt` and `2.txt` (and nothing else starting with a digit), 
 
