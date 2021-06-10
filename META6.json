@@ -7,7 +7,7 @@
 	"provides" : {		
 		"rrnm" : "bin/rrnm"
 	},
-        "auth" : "stuart-little",
+        "auth" : "zef:stuart-little",
 	"authors" : [ "stuart-little" ],
 	"perl" : "6.d",
 	"depends" : [ ],
