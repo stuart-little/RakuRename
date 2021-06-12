@@ -34,7 +34,7 @@ On the other hand,
 ```
 rrnm -c='cp' 's/^a/b/' <DIRECTORY>/a*
 ```
-will take every file of the form `<DIRECTORY>/a<BLAH>` and *copy* it to `<DIRECTORY>/b<BLAH>`. It will complain aboit not being able to copy directories among those (because the [cp command](https://linux.die.net/man/1/cp) behaves this way), but you can fix that with
+will take every file of the form `<DIRECTORY>/a<BLAH>` and *copy* it to `<DIRECTORY>/b<BLAH>`. It will complain about not being able to copy directories among those (because the [cp command](https://linux.die.net/man/1/cp) behaves this way), but you can fix that with
 ```
 rrnm -c='cp -r' 's/^a/b/' <DIRECTORY>/a*
 ```
