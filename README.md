@@ -8,7 +8,7 @@ If you have [zef](https://github.com/ugexe/zef), there are a number of options:
 
 - just run `zef install RakuRename`;
 - or clone this repo and issue `zef install <path-to-cloned-repo>`;
-- as yet another variation, after cloning it, `cd` into the repo and `zef install .`.
+- as yet another variation, after cloning it, `cd` into the repo and `zef install .` (note the dot at the end).
 
 Additionally, since all there is here, really, is the executable `bin/rrnm`, you can just download that and use it.
 
