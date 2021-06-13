@@ -4,11 +4,13 @@ A file-rename tool inspired by Perl's [File::Rename](https://metacpan.org/dist/F
 
 ## Installation
 
-If you have [zef](https://github.com/ugexe/zef) you can 
+If you have [zef](https://github.com/ugexe/zef), there are a number of options:
 
-- clone this repo
-- `cd` to it
-- run `zef install .`
+- just run `zef install RakuRename`;
+- or clone this repo and issue `zef install <path-to-cloned-repo>`;
+- as yet another variation, `cd` to it, and `zef install .`. 
+
+Additionally, since all there is here, really, is the executable `bin/rrnm`, you can just download that and use it.
 
 ## Usage
 
