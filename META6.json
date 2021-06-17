@@ -4,9 +4,7 @@
 	"version" : "0.2",
 	"tags" : [ "filesystem", "utils" ],
 	"description" : "rename files based on regular expressions",
-	"provides" : {		
-		"rrnm" : "bin/rrnm"
-	},
+	"provides" : { },
         "auth" : "zef:stuart-little",
 	"authors" : [ "stuart-little" ],
 	"perl" : "6.d",
