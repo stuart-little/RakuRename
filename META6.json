@@ -1,7 +1,7 @@
 {
 	"name" : "RakuRename",
 	"license" : "Artistic-2.0",
-	"version" : "0.2",
+	"version" : "0.3",
 	"tags" : [ "filesystem", "utils" ],
 	"description" : "rename files based on regular expressions",
 	"provides" : { },
